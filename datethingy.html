@@ -1,0 +1,196 @@
+<html>
+
+<head>
+    <title>Calendar</title>
+    
+    <link rel="stylesheet" href="evo-calendar.min.css">
+    <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet"> 
+    <style>
+    /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+    </style>
+    </head>
+    
+    <body>
+    <div class="topnav">
+  <a href="index.html">Home</a>
+  <a class="active" href="datethingy.html">Calendar</a>
+  <a class="active" href="MyTheories.html">My Theories</a>
+</div>
+    
+   <div class="hero">
+   
+       
+      <div id="calendar"></div> 
+       
+       
+   </div>
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <script src="evo-calendar.min.js"></script>
+    <script>
+        
+     $(document).ready(function() {
+    $('#calendar').evoCalendar({
+        
+    theme: "Midnight Blue",
+       calendarEvents: [
+            {
+        name: "Destruction Ep 3",
+        badge: "English Dub", // Event badge (optional)
+        date: ["October/22/2022", "October/22/2022"], // Date range
+        description: "What if Monarch could force kwamis who know the address of Ladybug to lead him to her? Unhappy little creatures would have no choice but to obey him. And if Monarch appeared on Marinette Dupain-Cheng’s house, could she escape him?", // Event description (optional)
+        type: "EnglishEpisode",
+        color: "#99ff33" // Event custom color (optional)
+      },
+      
+            {
+        name: "Jubilation Ep 4 ",
+        badge: "Portuguese Dub", // Event badge (optional)
+        date: ["October/24/2022", "October/24/2022"], // Date range
+        description: "Synopsis Not Yet Revealed", // Event description (optional)
+        type: "PortugueseEpisode",
+        color: "#ff00ff" // Event custom color (optional)
+      },
+           
+           {
+        name: "Jubilation Ep 4 ",
+        badge: "Italian Dub", // Event badge (optional)
+        date: ["October/26/2022", "October/26/2022"], // Date range
+        description: "Synopsis Not Yet Revealed", // Event description (optional)
+        type: "ItalianEpisode",
+        color: "#ff00ff" // Event custom color (optional)
+      },
+           
+           {
+        name: "Determination Ep 6 ",
+        badge: "French Dub", // Event badge (optional)
+        date: ["October/28/2022", "October/28/2022"], // Date range
+        description: "Synopsis Not Yet Revealed", // Event description (optional)
+        type: "FrenchEpisode",
+        color: "#ff00ff" // Event custom color (optional)
+      },
+         
+           {
+        name: "Jubilation Ep 4 ",
+        badge: "English Dub", // Event badge (optional)
+        date: ["October/29/2022", "October/29/2022"], // Date range
+        description: "Synopsis Not Yet Revealed", // Event description (optional)
+        type: "EnglishEpisode",
+        color: "#99ff33" // Event custom color (optional)
+      },
+         
+           {
+        name: "Passion Ep 7 ",
+        badge: "French Dub", // Event badge (optional)
+        date: ["October/31/2022", "October/31/2022"], // Date range
+        description: "Synopsis Not Yet Revealed", // Event description (optional)
+        type: "FrenchEpisode",
+        color: "#ff00ff" // Event custom color (optional)
+      },
+           
+           {
+        name: "Reunion Ep 8 ",
+        badge: "French Dub", // Event badge (optional)
+        date: ["November/1/2022", "November/1/2022"], // Date range
+        description: "Synopsis Not Yet Revealed", // Event description (optional)
+        type: "FrenchEpisode",
+        color: "#99ff33" // Event custom color (optional)
+      },
+           
+           {
+        name: "Illusion Ep 5 ",
+        badge: "French Dub", // Event badge (optional)
+        date: ["November/2/2022", "November/2/2022"], // Date range
+        description: "Synopsis Not Yet Revealed", // Event description (optional)
+        type: "FrenchEpisode",
+        color: "#99ff33" // Event custom color (optional)
+      },
+           
+           {
+        name: "Illusion Ep 5 ",
+        badge: "English Dub", // Event badge (optional)
+        date: ["November/5/2022", "November/5/2022"], // Date range
+        description: "Synopsis Not Yet Revealed", // Event description (optional)
+        type: "EnglishEpisode",
+        color: "#ff00ff" // Event custom color (optional)
+      },
+           
+           {
+        name: "Determination Ep 6",
+        badge: "English Dub", // Event badge (optional)
+        date: ["November/12/2022", "November/12/2022"], // Date range
+        description: "Synopsis Not Yet Revealed", // Event description (optional)
+        type: "EnglishEpisode",
+        color: "#ff00ff" // Event custom color (optional)
+      },
+           
+           {
+        name: "Passion Ep 7 ",
+        badge: "English Dub", // Event badge (optional)
+        date: ["November/19/2022", "November/19/2022"], // Date range
+        description: "Synopsis Not Yet Revealed", // Event description (optional)
+        type: "EnglishEpisode",
+        color: "#ff00ff" // Event custom color (optional)
+      },
+           
+           {
+        name: "Reunion Ep 8 ",
+        badge: "English Dub", // Event badge (optional)
+        date: ["November/26/2022", "November/26/2022"], // Date range
+        description: "Synopsis Not Yet Revealed", // Event description (optional)
+        type: "EnglishEpisode",
+        color: "#ff00ff" // Event custom color (optional)
+      },
+           
+    ]   
+    })
+})   
+        
+        
+        </script>
+        <h4>Usual Airing Times:</h4>
+        <h5>Gloob: 19:30 (Brazil Time), 23:30 (UK Time), 18:30 (EST)</h5>
+        <h5>Disney Channel USA: 10:00 (EST), 15:00 (UK Time)</h5>
+        <h5>TF1: 09:30 (CEST), 10:30 (UK Time), 05:30 (EST)</h5>
+        
+        
+        
+    </body>
+    
+</html>
