@@ -16,6 +16,10 @@
             float: right;
             
         }
+        #GameRetailer{
+            font-size: 45px;
+            color: forestgreen
+        }
 </style>
 
     </head>
@@ -53,11 +57,16 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "Aired";
+    document.getElementById("demo").innerHTML = "Released";
   }
 }, 1000);
 </script>
-    <h2 style="font-size: 25px; color:chocolate">Latest News:</h2>
+    <h2 style="font-size: 25px; color:chocolate">Avalible At:</h2>
+    <a id="GameRetailer" href="https://www.nintendo.co.uk/Games/Nintendo-Switch-games/Miraculous-Rise-of-the-Sphinx-2278873.html">Nintendo Switch</a>
+    <a id="GameRetailer" href="https://www.xbox.com/en-GB/games/store/miraculous-rise-of-the-sphinx/9nfn299rjkwt">Xbox</a>
+    <a id="GameRetailer" href="https://store.playstation.com/en-gb/product/EP0281-PPSA04790_00-MIRACULOUS000000">PlayStation</a>
+    
+    
     <video controls autoplay>
     <source src="Trailer1.mp4" >
     
