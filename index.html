@@ -4,7 +4,7 @@
     <title>Miraculous Season 5</title>
     <style>
         body{
-            background-color:  midnightblue;
+            background-color:  floralwhite;
             width: auto;
             height: auto;
 
@@ -64,13 +64,13 @@
   <a href="datethingy.html">Calendar</a>
   <a href="MyTheories.html">My Theories</a>
 </div> 
-    <h2 style="color: blue">Determination Countdown USA:</h2>
+    <h2 style="color: blue">Passion Countdown USA:</h2>
      <!-- Display the countdown timer in an element -->
 <p id="demo"></p>
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 12, 2022 15:30:00").getTime();
+var countDownDate = new Date("Nov 19, 2022 15:30:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -98,10 +98,81 @@ var x = setInterval(function() {
   }
 }, 1000);
 </script>
+    
+    <h2 style="color: blue">Perfection Countdown Gloob:</h2>
+     <!-- Display the countdown timer in an element -->
+<p id="demo1"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Nov 21, 2022 23:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo1").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo1").innerHTML = "Aired";
+  }
+}, 1000);
+</script>
+    
+    <h2 style="color: blue">Emotion Countdown Gloob:</h2>
+     <!-- Display the countdown timer in an element -->
+<p id="demo2"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Nov 22, 2022 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo2").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo2").innerHTML = "Aired";
+  }
+}, 1000);
+</script>
+    
     <img src="hehhehehehehehehe.jpg" id="smallpictofillgap">
     <section>
         <h2 id="LatestNews"> Latest News:</h2>
-        <p id="TheNews" style="color: orange; font-size: 30px; font-family: cursive;">Elation Teaser</p>
+        <p id="TheNews" style="color: orange; font-size: 30px; font-family: cursive;">Perfection and Emotion Teaser</p>
         <p style="color: rebeccapurple; font-size: 35px;font-family: monospace;"> <a href="TrailerMain.html">Click for Trailer</a>
          </p>
         
